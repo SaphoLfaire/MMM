@@ -1,0 +1,320 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>Architecture</title>
+    <script type:"text/javascript">
+    var architecture = {
+	name :"Master Bio_info",
+	children : [
+            {
+		name:"Parcours Computational",
+		children:[
+		    {
+			name:"Semestre 7",
+			children:[
+			    {
+				name:"Tronc commun",
+				children:[
+				    {
+					name:"Algorithmics and Programming - 9 ECTS",
+					children:[]
+				    },
+				    
+				    {
+					name:"English - 3 ECTS",
+					children:[]
+				    },
+
+				    {
+					name:"3 UE de 6 ECTS",
+					children:[
+					    {
+						name:"Data Processing,Biostatistics",
+						children:[]
+					    },
+
+					    {
+						name:"Omics and Bioinformatics",
+						children:[]
+					    },
+
+					    {
+						name:"Image Processing, ImageJ and JavaScript",
+						children:[]
+					    }
+					]
+				    }
+				    
+				]
+			    }
+			]
+                    },
+                    {
+			name:"Semestre 8",
+			children:[
+			    {
+				name:"Project - 9 ECTS",
+				children:[]
+			    },
+			    
+			    {
+				name:"2 UEs obligatoires",
+				children:[]
+			    },
+
+			    {
+				name:"1 UE obligatoire parcours",
+				children:[]
+			    },
+
+			    {
+				name:"1 UE optionnelle",
+				children:[]
+			    }							 			]
+		    },
+		    
+		    {
+			name:"Semestre 9",
+			children:[
+			    {
+				name:"2 UEs obligatoires",
+				children:[]	
+			    },
+
+			    {
+				name:"2 UEs obligatoires parcours",
+				children:[]
+			    },
+
+			    {
+				name:"1 UE optionelle",
+				children:[]
+			    }
+			]
+		    },
+		    
+		    {
+			name:"Semestre 10",
+			children:[
+			    {
+				name:"Stage 30 ECTS",
+				children:[]
+			    }
+			]
+		    }
+		]
+            },
+            {
+		name:"Parcours Gen/Eco",	
+		children:[
+		    {
+			name:"Semestre 7",
+			children:[
+			    {
+				name:"Tronc commun",
+				children:[
+				    {
+					name:"Algorithmics and Programming - 9 ECTS",
+					children:[]
+				    },
+				    
+				    {
+					name:"English - 3 ECTS",
+					children:[]
+				    },
+
+				    {
+					name:"3 UE de 6 ECTS",
+					children:[
+					    {
+						name:"Data Processing,Biostatistics",
+						children:[]
+					    },
+
+					    {
+						name:"Omics and Bioinformatics",
+						children:[]
+					    },
+
+					    {
+						name:"Image Processing, ImageJ and JavaScript",
+						children:[]
+					    }
+					]
+				    }			    
+				]
+			    }
+			]
+                    },
+                    {
+			name:"Semestre 8",
+			children:[
+			    {
+				name:"Project - 9 ECTS",
+				children:[]
+			    },
+			    
+			    {
+				name:"2 UEs obligatoires",
+				children:[]
+			    },
+
+			    {
+				name:"1 UE obligatoire parcours",
+				children:[]
+			    },
+
+			    {
+				name:"1 UE optionnelle",
+				children:[]
+			    }
+			]
+		    },
+		    
+		    {
+			name:"Semestre 9",
+			children:[
+			    {
+				name:"2 UEs obligatoires",
+				children:[]	
+			    },
+
+			    {
+				name:"2 UEs obligatoires parcours",
+				children:[]
+			    },
+
+			    {
+				name:"1 UE optionelle",
+				children:[]
+			    }
+			]
+			
+		    },
+		    
+		    {
+			name:"Semestre 10",
+			children:[
+			    {
+				name:"Stage 30 ECTS",
+				children:[]
+			    }
+			]
+		    }
+		]
+            },
+            {
+		name:"Parcours International",
+		children:[
+                    {
+			name:"Semestre 7",
+			children:[
+			    {
+				name:"Tronc commun",
+				children:[
+				    {
+					name:"Algorithmics and Programming - 9 ECTS",
+					children:[]
+				    },
+				    
+				    {
+					name:"English - 3 ECTS",
+					children:[]
+				    },
+
+				    {
+					name:"3 UE de 6 ECTS",
+					children:[
+					    {
+						name:"Data Processing,Biostatistics",
+						children:[]
+					    },
+
+					    {
+						name:"Omics and Bioinformatics",
+						children:[]
+					    },
+
+					    {
+						name:"Image Processing, ImageJ and JavaScript",
+						children:[]
+					    }
+					]
+				    }
+				]
+			    }
+			]
+                    },
+                    {
+			name:"Semestre 8",
+			children:[
+			    {
+				name:"University of Bilbao",
+				children:[]
+			    }
+			]
+		    },
+		    
+		    {
+			name:"Semestre 9",
+			children:[
+			    {
+				name:"2 UEs obligatoires",
+				children:[]	
+			    },
+
+			    {
+				name:"2 UEs obligatoires parcours",
+				children:[]
+			    },
+
+			    {
+				name:"1 UE optionelle",
+				children:[]
+			    }
+			]
+		    },
+		    
+		    {
+			name:"Semestre 10",
+			children:[
+			    {
+				name:"Stage 30 ECTS",
+				children:[]
+			    }
+			]
+		    }
+		]
+	    }
+	]
+    }
+		    
+               
+   
+console.log(architecture);
+var html='';
+
+function main() {
+    traverse (architecture,0);
+    console.log(html);
+    document.getElementById("result").innerHTML='<pre>'+html+'</pre>';
+}
+
+function traverse(composante,level){
+    var spaces=Array(level+1).join("...");
+    html+=(spaces +"+--"+composante.name+"\n");
+
+    for (var i=0;i<composante.children.length;i++){
+	traverse(composante.children[i],level+1);
+    }
+}
+		   
+		   
+</script>
+</head>
+<body onload="main()">
+    <div id="result">
+    </div>
+</body>
+</html>
