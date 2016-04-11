@@ -1,0 +1,96 @@
+{
+	"Master BioInfo":[
+	{"Parcours" : "Comput.", 
+		"Semestre 1(7)" : 
+		[{
+			"UE" : "Anglais", 
+			"UE" : "Réalisation logicielle", 
+			"UE" : "AEB", 
+			"UE" : "Biomodélisation et Stimulation de Processus Biologiques",
+			"UE" : "Algorithmique et Programmation"
+			}], 
+
+		"Semestre 2(8)" : 
+			[{
+			"UEs Obligatoires" : [], 
+			"UEs Optionnelles" : []
+			}], 
+
+		"Semestre 3(9)": 
+			[{
+			"UEs Obligatoires" : [], 
+			"UEs Optionnelles" : []
+			}], 
+
+		"Semestre 4(10)" : [{"UE" : "Stage"}]}
+
+	{"Parcours" : "Internationnal BAO", 
+		"Semestre 1(7)" : 
+		[{
+			"UE" : "Anglais", 
+			"UE" : "Réalisation logicielle", 
+			"UE" : "AEB", 
+			"UE" : "Biomodélisation et Stimulation de Processus Biologiques",
+			"UE" : "Algorithmique et Programmation"
+			}], 
+
+		"Semestre 2(8)" : 
+			[{
+			"UEs Obligatoires" : "Université de Bilbao", 
+			"UEs Optionnelles" : "Université de Bilbao"
+			}], 
+
+		"Semestre 3(9)": 
+		[{
+			"UEs Obligatoires" : [], 
+			"UEs Optionnelles" : []
+			}], 
+
+		"Semestre 4(10)" : [{"UE" : "Stage"}]}
+
+	{"Parcours" : "Gen./Eco.", 
+		"Semestre 1(7)" : 
+		[{
+			"UE" : "Anglais", 
+			"UE" : "Réalisation logicielle", 
+			"UE" : "AEB", 
+			"UE" : "Biomodélisation et Stimulation de Processus Biologiques",
+			"UE" : "Algorithmique et Programmation"
+			}], 
+
+		"Semestre 2(8)" : 
+		[{
+			"UEs Obligatoires" : [], 
+			"UEs Optionnelles" : []
+			}], 
+
+		"Semestre 3(9)": 
+		[{
+			"UEs Obligatoires" : [], 
+			"UEs Optionnelles" : []
+			}], 
+
+		"Semestre 4(10)" : [{"UE" : "Stage"}]}
+
+
+
+
+
+
+}
+
+		]
+
+
+
+
+
+
+
+
+
+
+
+
+		]
+}
