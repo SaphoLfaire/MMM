@@ -1,0 +1,111 @@
+[{"name" : "Master", 
+ "children" : [
+    {"name" : "C++BIO",
+     "parent" : "Master", 
+     "children" : [
+         {"name" : "semestre 7",
+           "parent" : "C++BIO", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires",
+               "parent" : "semestre 7", 
+               "children" : [
+
+                   {"name" : "11",
+                   "parent" : "UEs Obligatoires",
+},
+                   {"name" : "12",
+                   "parent" : "UEs Obligatoires",
+},
+              {"name" : "UEs Facultatives",
+             "parent" : "semestre 7", 
+             "children" : [
+
+                    {"name" : "13",
+                    "parent" : "UEs Facultatives", 
+},
+                    {"name" : "14",
+                    "parent" : "UEs Facultatives", 
+},
+         {"name" : "semestre 8",
+           "parent" : "C++BIO", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires",
+               "parent" : "semestre 8", 
+               "children" : [
+
+                   {"name" : "21",
+                   "parent" : "UEs Obligatoires",
+},
+                   {"name" : "22",
+                   "parent" : "UEs Obligatoires",
+},
+              {"name" : "UEs Facultatives",
+             "parent" : "semestre 8", 
+             "children" : [
+
+                    {"name" : "23",
+                    "parent" : "UEs Facultatives", 
+},
+                    {"name" : "24",
+                    "parent" : "UEs Facultatives", 
+},
+    {"name" : "Parcours2",
+     "parent" : "Master", 
+     "children" : [
+         {"name" : "semestre 7",
+           "parent" : "Parcours2", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires",
+               "parent" : "semestre 7", 
+               "children" : [
+
+                   {"name" : "211",
+                   "parent" : "UEs Obligatoires",
+},
+                   {"name" : "212",
+                   "parent" : "UEs Obligatoires",
+},
+              {"name" : "UEs Facultatives",
+             "parent" : "semestre 7", 
+             "children" : [
+
+                    {"name" : "213",
+                    "parent" : "UEs Facultatives", 
+},
+                    {"name" : "214",
+                    "parent" : "UEs Facultatives", 
+},
+         {"name" : "semestre 8",
+           "parent" : "Parcours2", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires",
+               "parent" : "semestre 8", 
+               "children" : [
+
+                   {"name" : "221",
+                   "parent" : "UEs Obligatoires",
+},
+                   {"name" : "222",
+                   "parent" : "UEs Obligatoires",
+},
+              {"name" : "UEs Facultatives",
+             "parent" : "semestre 8", 
+             "children" : [
+
+                    {"name" : "223",
+                    "parent" : "UEs Facultatives", 
+},
+                    {"name" : "224",
+                    "parent" : "UEs Facultatives", 
+},
+ }
+      ]
+      }
+      ] 
+      }
+      ]
+      },
