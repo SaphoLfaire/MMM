@@ -69,23 +69,25 @@ def filtrer (source, destination) :
 		liste_s7_e = []
 		for i in liste :
 			for j in range(len(i)) :
-			
 
 
 				if i[j] == "C++BIO" and i[j-1] == num and i[j+1] == "required"  :
 					liste_s7_r.append(i[0])
-					print liste_s7_r
+					#print liste_s7_r
 					
 				if i[j] == "C++BIO" and i[j-1] == num and i[j+1] == "elective" :
 					
 					liste_s7_e.append(i[0])
-				lis_s7.append(liste_s7_r)
-				lis_s7.append(liste_s7_e)
-				listesemestres.append(lis_s7)
+				
+			lis_s7.append(liste_s7_r)
+			lis_s7.append(liste_s7_e)
+		listesemestres.append(lis_s7)
+
 		
 		liste_p.append(i[2])
 		liste_p.append(listesemestres)
 		liste_triee.append(liste_p)
+	print listesemestres
 		
 	#print liste_triee
 
