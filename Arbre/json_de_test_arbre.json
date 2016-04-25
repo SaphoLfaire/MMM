@@ -1,0 +1,153 @@
+[{"name" : "Master",
+  "children" : [
+
+    {"name" : "C++BIO",
+     "parent" : "Master",
+     "children" : [
+
+			{"name" : "Semestre 7",
+			 "parent" : "C++BIO",
+			 "children" : [
+
+			    {"nane" : "UEs Obligatoires",
+			     "parent" : "Semestre 7",
+			     "children" : [
+				{"name" : "Anglais", 
+				 "parent" : "UEs Obligatoires"
+				 },
+				 {"name" : "Algo", 
+				 "parent" : "UEs Obligatoires"
+				 }, 
+				 {"name" : "Unix", 
+				  "parent" : "UEs Obligatoires"
+				 }
+				 ]
+				 },
+
+			    {"name" : "UEs Facultatives", 
+			     "parent" : "Semestre 7", 
+			     "children" : [
+				{"name" : "Imagerie", 
+				 "parent" : "UEs Facultatives"
+				 },
+				 {"name" : "Physique",
+				  "parent" : "UEs Facultatives"
+				  }
+				  ]
+				  }
+				  ] 
+				  },
+
+			{"name" : "Semestre 8", 
+			 "parent" : "C++BIO", 
+			 "children" : [
+
+			    {"nane" : "UEs Obligatoires",
+			     "parent" : "Semestre 8",
+			     "children" : [
+				  {"name" : "Allemand", 
+				 "parent" : "UEs Obligatoires"
+				 },
+				 {"name" : "Truc", 
+				 "parent" : "UEs Obligatoires"
+				 }, 
+				 {"name" : "Logiciel", 
+				  "parent" : "UEs Obligatoires"
+				 }
+				 ]
+				 },
+
+			    {"name" : "UEs Facultatives", 
+			     "parent" : "Semestre 8", 
+			     "children" : [
+				{"name" : "Maison", 
+				 "parent" : "UEs Facultatives"
+				 },
+				 {"name" : "Dark Vador",
+				  "parent" : "UEs Facultatives"
+				  }
+				  ]
+				  }
+				  ]
+				  }
+				  ]
+				  },
+
+	{"name" : "parcours 2",
+     "parent" : "Master",
+     "children" : [
+
+			{"name" : "Semestre 7",
+			 "parent" : "C++BIO",
+			 "children" : [
+
+			    {"nane" : "UEs Obligatoires",
+			     "parent" : "Semestre 7",
+			     "children" : [
+				{"name" : "Anglais", 
+				 "parent" : "UEs Obligatoires"
+				 },
+				 {"name" : "Algo", 
+				 "parent" : "UEs Obligatoires"
+				 }, 
+				 {"name" : "Leia", 
+				  "parent" : "UEs Obligatoires"
+				 }
+				 ]
+				 },
+
+			    {"name" : "UEs Facultatives", 
+			     "parent" : "Semestre 7", 
+			     "children" : [
+				{"name" : "Cheval", 
+				 "parent" : "UEs Facultatives"
+				 },
+				 {"name" : "poney",
+				  "parent" : "UEs Facultatives"
+				  }
+				  ]
+				  }
+				  ] 
+				  },
+
+			{"name" : "Semestre 8", 
+			 "parent" : "C++BIO", 
+			 "children" : [
+
+			    {"nane" : "UEs Obligatoires",
+			     "parent" : "Semestre 8",
+			     "children" : [
+				  {"name" : "patate", 
+				 "parent" : "UEs Obligatoires"
+				 },
+				 {"name" : "cornichon", 
+				 "parent" : "UEs Obligatoires"
+				 }, 
+				 {"name" : "courgette", 
+				  "parent" : "UEs Obligatoires"
+				 }
+				 ]
+				 },
+
+			    {"name" : "UEs Facultatives", 
+			     "parent" : "Semestre 8", 
+			     "children" : [
+				{"name" : "Julie", 
+				 "parent" : "UEs Facultatives"
+				 },
+				 {"name" : "Khaoula",
+				  "parent" : "UEs Facultatives"
+				  }
+				  ]
+				  }
+				  ]
+				  }
+				  ]
+				  }
+				  ]
+				  }
+				  ]
+
+		  
+	     
+	 
