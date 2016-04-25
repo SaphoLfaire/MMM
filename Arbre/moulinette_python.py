@@ -53,98 +53,15 @@ def filtrer (source, destination) :
 	liste.pop(0)
 	#print liste
 	liste_triee = []
-	liste_p =[]
-	listesemestres = []
 	liste_par = ["C++BIO", "GENORG", "ORGECO", "BSC"]
-	num_s = ["7", "8", "9", "10"]
-	for num in num_s :
-		lis_s7 = []
-		liste_s7_r = []
-		liste_s7_e = []
-		for i in liste :
-			for j in range(len(i)) :
-				if i[j] == "C++BIO" and i[j-1] == num and i[j+1] == "required"  :
-					liste_s7_r.append(i[0])
-					#print liste_s7_r
-					
-				if i[j] == "C++BIO" and i[j-1] == num and i[j+1] == "elective" :
-					liste_s7_e.append(i[0])
-				
-		lis_s7.append(liste_s7_r)
-		lis_s7.append(liste_s7_e)
-		listesemestres.append(lis_s7)
-
-	liste_p.append(i[2])
-	liste_p.append(listesemestres)
-	liste_triee.append(liste_p)
-	print liste_triee
+	for parcours in liste_par :
+		rangement (parcours, liste, liste_triee)
+	#print liste_triee
 
 	"""
 		
 	#print liste_triee
 	#liste_triee = [["C++BIO", [[["11", "12"], ["13", "14"]],[["21", "22"],["23", "24"]]]], ["Parcours2", [[["211", "212"], ["213", "214"]],[["221", "222"], ["223", "224"]]]]]
-
-	for i in liste : 
-		for j in range(len(i)) : 
-			if i[j] == "GENORG" and (i[j+1] == "required"):
-				liste_ue = []
-				liste_ue.append (i[j])
-				liste_ue.append (i[j+1])
-				liste_ue.append (i[1])
-				liste_ue.append(i[0])
-				liste_triee.append (liste_ue)
-
-	for i in liste : 
-		for j in range(len(i)) : 
-			if i[j] == "GENORG" and (i[j+1] == "elective"):
-				liste_ue = []
-				liste_ue.append (i[j])
-				liste_ue.append (i[j+1])
-				liste_ue.append (i[1])
-				liste_ue.append(i[0])
-				liste_triee.append (liste_ue)
-				
-
-	for i in liste : 
-		for j in range(len(i)) : 
-			if i[j] == "ORGECO" and (i[j+1] == "required"):
-				liste_ue = []
-				liste_ue.append (i[j])
-				liste_ue.append (i[j+1])
-				liste_ue.append (i[1])
-				liste_ue.append(i[0])
-				liste_triee.append (liste_ue)
-
-	for i in liste : 
-		for j in range(len(i)) : 
-			if i[j] == "ORGECO" and (i[j+1] == "elective"):
-				liste_ue = []
-				liste_ue.append (i[j])
-				liste_ue.append (i[j+1])
-				liste_ue.append (i[1])
-				liste_ue.append(i[0])
-				liste_triee.append (liste_ue)
-
-	for i in liste : 
-		for j in range(len(i)) : 
-			if i[j] == "BSC" and (i[j+1] == "required"):
-				liste_ue = []
-				liste_ue.append (i[j])
-				liste_ue.append (i[j+1])
-				liste_ue.append (i[1])
-				liste_ue.append(i[0])
-				liste_triee.append (liste_ue)
-
-	for i in liste : 
-		for j in range(len(i)) : 
-			if i[j] == "BSC" and (i[j+1] == "elective"):
-				liste_ue = []
-				liste_ue.append (i[j])
-				liste_ue.append (i[j+1])
-				liste_ue.append (i[1])
-				liste_ue.append(i[0])
-				liste_triee.append (liste_ue)
-	print liste_triee
 	"""
 
 	#écriture du premier objet du json	
@@ -180,7 +97,7 @@ def filtrer (source, destination) :
 							for n in l :
 								destination.write ("                   {\"name\" : \"")
 								destination.write((str(n)))
-								destination.write("\",\n                   \"parent\" : \"UEs Obligatoires\",\n},\n")
+								destination.write("\",\n                   \"parent\" : \"UEs Obligatoires\",			    	\n},\n")
 					#création de l'objet des ues facultatives
 					destination.write ("              {\"name\" : \"UEs Facultatives\",\n             \"parent\" : \"")
 					destination.write("semestre ")
@@ -194,11 +111,43 @@ def filtrer (source, destination) :
 							for n in l :
 								destination.write ("                    {\"name\" : \"")
 								destination.write((str(n)))
-								destination.write("\",\n                    \"parent\" : \"UEs Facultatives\", \n},\n")
+								destination.write("\",\n                    \"parent\" : \"UEs Facultatives\", 			    	\n},\n")
 					#incrémentation de la variable qui numérote les semestres
 					w = w +1
 	#fermeture de tous les objets
 	destination.write(" }\n      ]\n      }\n      ] \n      }\n      ]\n      },\n")
+
+def rangement (a, liste_source, liste_destination):
+	liste_p =[]
+	listesemestres = []
+	num_s = ["7", "8", "9", "10"]
+	for num in num_s :
+		lis_s7 = []
+		liste_s7_r = []
+		liste_s7_e = []
+		lis_s8 = []
+		liste_s8_r = []
+		liste_s8_e = []
+		for i in liste_source :
+			for j in range(len(i)) :
+				if i[j] == a and i[j+1] == "required" and (i[j-1] == num or i[j-3] == num or i[j-5] == num) :
+					liste_s7_r.append(i[0])
+					#print liste_s7_r
+					
+				if i[j] == a and i[j+1] == "elective" and (i[j-1] == num or i[j-3] == num or i[j-5] == num):
+					liste_s7_e.append(i[0])
+
+		lis_s7.append(liste_s7_r)
+		lis_s7.append(liste_s7_e)
+
+		listesemestres.append(lis_s7)
+
+	liste_p.append(a)
+	liste_p.append(listesemestres)
+	liste_destination.append(liste_p)
+	return liste_destination
+
+
 
 
 
