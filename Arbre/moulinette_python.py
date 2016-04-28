@@ -95,7 +95,7 @@ def filtrer (source, destination) :
 							for n in l :
 								destination.write ("                   {\"name\" : \"")
 								destination.write((str(n)))
-								destination.write("\",\n                   \"parent\" : \"UEs Obligatoires\",			    	\n},\n")
+								destination.write("\",\n                   \"parent\" : \"UEs Obligatoires\"			    	\n},\n")
 					#création de l'objet des ues facultatives
 					destination.write ("              {\"name\" : \"UEs Facultatives\",\n             \"parent\" : \"")
 					destination.write("semestre ")
@@ -109,7 +109,7 @@ def filtrer (source, destination) :
 							for n in l :
 								destination.write ("                    {\"name\" : \"")
 								destination.write((str(n)))
-								destination.write("\",\n                    \"parent\" : \"UEs Facultatives\", 			    	\n},\n")
+								destination.write("\",\n                    \"parent\" : \"UEs Facultatives\" 			    	\n},\n")
 					#incrémentation de la variable qui numérote les semestres
 					w = w +1
 	#fermeture de tous les objets

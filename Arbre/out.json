@@ -1,4 +1,4 @@
-[{"name" : "Master", 
+{"name" : "Master", 
  "children" : [
     {"name" : "C++BIO",
      "parent" : "Master", 
@@ -12,16 +12,16 @@
                "children" : [
 
                    {"name" : "Anglais",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "AEB",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "BioMod",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "AlgoProg",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 7", 
@@ -36,20 +36,20 @@
                "children" : [
 
                    {"name" : "InitR&D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "MOBioS",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 8", 
              "children" : [
 
                     {"name" : "InfoApp",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "POO",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
          {"name" : "semestre 9",
            "parent" : "C++BIO", 
@@ -60,53 +60,53 @@
                "children" : [
 
                    {"name" : "ClassData",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "CommPR&D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "Entreprise",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "ModSysBio",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "Prot3D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 9", 
              "children" : [
 
                     {"name" : "AnglaisM2",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "ArchiGen",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "GenHuman",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "DivCell",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "AlgoBioGraph",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "Visu3D",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "POA",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "AppObj",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "OICI",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "SysAuto",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
          {"name" : "semestre 10",
            "parent" : "C++BIO", 
@@ -117,7 +117,7 @@
                "children" : [
 
                    {"name" : "StageM2",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 10", 
@@ -135,16 +135,16 @@
                "children" : [
 
                    {"name" : "Anglais",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "AEB",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "BioMod",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "AlgoProg",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 7", 
@@ -159,20 +159,20 @@
                "children" : [
 
                    {"name" : "InitR&D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "MOBioS",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 8", 
              "children" : [
 
                     {"name" : "InfoApp",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "POO",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
          {"name" : "semestre 9",
            "parent" : "GENORG", 
@@ -183,53 +183,53 @@
                "children" : [
 
                    {"name" : "ClassData",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "CommPR&D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "Entreprise",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "ModSysBio",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "Prot3D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 9", 
              "children" : [
 
                     {"name" : "AnglaisM2",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "ArchiGen",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "GenHuman",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "DivCell",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "AlgoBioGraph",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "Visu3D",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "POA",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "AppObj",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "OICI",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "SysAuto",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
          {"name" : "semestre 10",
            "parent" : "GENORG", 
@@ -240,7 +240,7 @@
                "children" : [
 
                    {"name" : "StageM2",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 10", 
@@ -258,16 +258,16 @@
                "children" : [
 
                    {"name" : "Anglais",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "AEB",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "BioMod",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "AlgoProg",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 7", 
@@ -282,20 +282,20 @@
                "children" : [
 
                    {"name" : "InitR&D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "MOBioS",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 8", 
              "children" : [
 
                     {"name" : "InfoApp",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "POO",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
          {"name" : "semestre 9",
            "parent" : "ORGECO", 
@@ -306,53 +306,53 @@
                "children" : [
 
                    {"name" : "ClassData",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "CommPR&D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "Entreprise",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "ModSysBio",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
                    {"name" : "Prot3D",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 9", 
              "children" : [
 
                     {"name" : "AnglaisM2",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "ArchiGen",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "GenHuman",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "DivCell",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "AlgoBioGraph",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "Visu3D",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "POA",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "AppObj",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "OICI",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
                     {"name" : "SysAuto",
-                    "parent" : "UEs Facultatives", 			    	
+                    "parent" : "UEs Facultatives" 			    	
 },
          {"name" : "semestre 10",
            "parent" : "ORGECO", 
@@ -363,7 +363,7 @@
                "children" : [
 
                    {"name" : "StageM2",
-                   "parent" : "UEs Obligatoires",			    	
+                   "parent" : "UEs Obligatoires"			    	
 },
               {"name" : "UEs Facultatives",
              "parent" : "semestre 10", 
@@ -426,4 +426,4 @@
       ] 
       }
       ]
-      },
+      }

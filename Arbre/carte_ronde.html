@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title> Carte </title>
+<title> Carte Essai </title>
 <style>
-
+/**
 .node circle {
   fill: #fff;
-  stroke: steelblue;
+  stroke: green;
   stroke-width: 1.5px;
 }
-
+**/
 .node {
   font: 10px sans-serif;
 }
@@ -23,50 +23,97 @@
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
-
-var diameter = 960;
-
+//création du cadre de travail
+var cadre = 960;
+//annonce qu'on va créer un arbre via un modele
 var tree = d3.layout.tree()
-    .size([360, diameter / 2 - 120])
-    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
-
-var diagonal = d3.svg.diagonal.radial()
+    .size([360, cadre / 2 - 170]) //taille de l'arbre
+    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 4) / a.depth; }); //espacement des noeuds les uns des autres
+/**
+var diagonal = d3.svg.diagonal.radial() //liens entre chaque noeuds --> va changer
     .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
 
-var svg = d3.select("body").append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter - 150)
-    .append("g")
-    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+/**
+var diagonal = svgContainer.append("line")
+    .attr("x1", function(d){return [d.x/180*Math.PI];})
+    .attr("y1")
+**/
 
-d3.json("treeData.json", function(error, root) {
+var svg = d3.select("body").append("svg") //creation des svg dans le body
+    .attr("width", cadre)
+    .attr("height", cadre - 90)
+    .append("g")
+    .attr("transform", "translate(" + cadre / 2 + "," + cadre / 2 + ")");
+
+d3.json("treeData.json", function(error, root) { //appel des données
   if (error) throw error;
 
   var nodes = tree.nodes(root),
       links = tree.links(nodes);
-
+/**
   var link = svg.selectAll(".link")
       .data(links)
     .enter().append("path")
       .attr("class", "link")
       .attr("d", diagonal);
+**/
+  var link = svg.selectAll(".link") // ca ca ne marche pas !
+      .data(links)
+    .enter().append("line")
+      .attr("class", "link")
+      .attr("x1", function (d) {return d.source.x;})
+      .attr("y1", function (d) {return d.source.y;})
+      .attr("x2", function (d) {return d.source.x;})
+      .attr("y2", function (d) {return d.source.y;});
 
   var node = svg.selectAll(".node")
       .data(nodes)
     .enter().append("g")
       .attr("class", "node")
+
       .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
 
   node.append("circle")
-      .attr("r", 4.5);
+      .attr("r", 7)
+      .attr("fill", "green")
+      .attr ("stroke", "#006600")
+      .attr ("stroke-width", 3);
+/**
+  node.append ("rect") il vcaut mieux avoir un objet rond
+      .attr ("x", 10)
+      .attr("y", 10)
+      .attr("width", 10)
+      .attr("height", 10);
+      **/
 
   node.append("text")
       .attr("dy", ".31em")
-      .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+      
+      .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "start"; })
+      /**
       .attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
+      **/
+      .attr("transform", function(d) { return d.x == 0 ? "translate(10)" : "rotate("+ (-d.x + 90) +")translate(10)"; }) //permet la rotation du texte independemment de la rotation de l'objet
+    
+      
+
+
       .text(function(d) { return d.name; });
 });
 
-d3.select(self.frameElement).style("height", diameter - 150 + "px");
+d3.select(self.frameElement).style("height", cadre - 150 + "px");
+
+function click(d) { // ca non plus !
+  if (d.children) {
+  d._children = d.children;
+  d.children = null;
+  } else {
+  d.children = d._children;
+  d._children = null;
+  }
+  update(d);
+}
 
 </script>
+</body>
+</html>
