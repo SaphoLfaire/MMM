@@ -31,7 +31,7 @@ var tree = d3.layout.tree()
     .separation(function(a, b) { return (a.parent == b.parent ? 1 : 4) / a.depth; }); //espacement des noeuds les uns des autres
 
 //********* lignes courbes ************
-var radius = 100,
+var radius = 50,
     padding = 10,
     radians = 2 * Math.PI,
     points = 50 ;
@@ -42,14 +42,14 @@ var dimension = (2 * radius) + (2 * padding),
 **/
 
 var echele = d3.scale.linear()
-    .domain([0, points-1])
+    .domain([0, 100])
     .range([0, radians]);
 
 var line = d3.svg.line.radial()
     .interpolate("basis-open")
-    .tension(0)
-    .radius(radius)
-    .angle(function(d,i) { return echele(i) });
+    .tension(100)
+    .radius(function(d){return d.x})
+    .angle(function(d, i) { return echele(i) });
 
 
 // *********** diagonal*************
@@ -60,10 +60,13 @@ var diagonal = d3.svg.diagonal.radial() //liens entre chaque noeuds --> diagonal
 
 // ********** Arcs de cercle **********
 var arc = d3.svg.arc() //liens entre chaque noeuds --> arc
-    .innerRadius (40)
-    .outerRadius(0)
-    .startAngle(function(d) {return d.x *Math.PI/180})
-    .endAngle(function(d) {return d.y*Math.PI/180});
+    .innerRadius (function(d){return d.x})
+    .outerRadius(30)
+    .startAngle(function(d, i) {return i *Math.PI/180})
+    .endAngle(function(d, i) {return (i*Math.PI/180) });
+
+
+
 
 //*********** CADRE ****************
 var svg = d3.select("body").append("svg") //creation des svg dans le body
@@ -101,7 +104,7 @@ svg.append("path").datum(d3.range(points))
       .data(links)
     .enter().append("path").datum(d3.range(points))
       .attr("class", "link")
-      .attr("d", line); // --> ne pas oublier de changer le dernier attribut en fonction de ce que l'on veut
+      .attr("d", arc); // --> ne pas oublier de changer le dernier attribut en fonction de ce que l'on veut
 
 
   var node = svg.selectAll(".node")
@@ -120,10 +123,6 @@ svg.append("path").datum(d3.range(points))
       .attr("dy", ".31em")
       .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "start"; })
       .attr("transform", function(d) { return d.x == 0 ? "translate(10)" : "rotate("+ (-d.x + 90) +")translate(10)"; }) //permet la rotation du texte independemment de la rotation de l'objet
-    
-      
-
-
       .text(function(d) { return d.name; });
 });
 
