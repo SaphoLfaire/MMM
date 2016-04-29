@@ -25,52 +25,89 @@
 <script>
 //création du cadre de travail
 var cadre = 960;
-//annonce qu'on va créer un arbre via un modele
+//annonce qu'on va créer un arbre
 var tree = d3.layout.tree()
     .size([360, cadre / 2 - 170]) //taille de l'arbre
     .separation(function(a, b) { return (a.parent == b.parent ? 1 : 4) / a.depth; }); //espacement des noeuds les uns des autres
-/**
-var diagonal = d3.svg.diagonal.radial() //liens entre chaque noeuds --> va changer
-    .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
+
+//********* lignes courbes ************
+var radius = 100,
+    padding = 10,
+    radians = 2 * Math.PI,
+    points = 50 ;
 
 /**
-var diagonal = svgContainer.append("line")
-    .attr("x1", function(d){return [d.x/180*Math.PI];})
-    .attr("y1")
+var dimension = (2 * radius) + (2 * padding),
+    points = 50;
 **/
 
+var echele = d3.scale.linear()
+    .domain([0, points-1])
+    .range([0, radians]);
+
+var line = d3.svg.line.radial()
+    .interpolate("basis-open")
+    .tension(0)
+    .radius(radius)
+    .angle(function(d,i) { return echele(i) });
+
+
+// *********** diagonal*************
+var diagonal = d3.svg.diagonal.radial() //liens entre chaque noeuds --> diagonal
+    .projection(function(d) { return [d.y, d.x / 180 * Math.PI];});
+
+
+
+// ********** Arcs de cercle **********
+var arc = d3.svg.arc() //liens entre chaque noeuds --> arc
+    .innerRadius (40)
+    .outerRadius(0)
+    .startAngle(function(d) {return d.x *Math.PI/180})
+    .endAngle(function(d) {return d.y*Math.PI/180});
+
+//*********** CADRE ****************
 var svg = d3.select("body").append("svg") //creation des svg dans le body
     .attr("width", cadre)
     .attr("height", cadre - 90)
     .append("g")
     .attr("transform", "translate(" + cadre / 2 + "," + cadre / 2 + ")");
 
+
+//********** RECUPERATION DES DONNEES *************
 d3.json("treeData.json", function(error, root) { //appel des données
   if (error) throw error;
 
+
+
+/**
+  var arc = d3.svg.arc() //liens entre chaque noeuds --> arc
+    .innerRadius (function(d){return d.y*79})
+    .outerRadius(0)
+    .startAngle(0)
+    .endAngle(2*Math.PI);
+
+svg.append("path").datum(d3.range(points))
+    .attr("class", "line")
+    .attr("d", line)
+    .attr("transform", "translate(" + (radius + padding) + ", " + (radius + padding) + ")");
+**/
+
+
+
   var nodes = tree.nodes(root),
       links = tree.links(nodes);
-/**
+
   var link = svg.selectAll(".link")
       .data(links)
-    .enter().append("path")
+    .enter().append("path").datum(d3.range(points))
       .attr("class", "link")
-      .attr("d", diagonal);
-**/
-  var link = svg.selectAll(".link") // ca ca ne marche pas !
-      .data(links)
-    .enter().append("line")
-      .attr("class", "link")
-      .attr("x1", function (d) {return d.source.x;})
-      .attr("y1", function (d) {return d.source.y;})
-      .attr("x2", function (d) {return d.source.x;})
-      .attr("y2", function (d) {return d.source.y;});
+      .attr("d", line); // --> ne pas oublier de changer le dernier attribut en fonction de ce que l'on veut
+
 
   var node = svg.selectAll(".node")
       .data(nodes)
     .enter().append("g")
       .attr("class", "node")
-
       .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
 
   node.append("circle")
@@ -78,21 +115,10 @@ d3.json("treeData.json", function(error, root) { //appel des données
       .attr("fill", "green")
       .attr ("stroke", "#006600")
       .attr ("stroke-width", 3);
-/**
-  node.append ("rect") il vcaut mieux avoir un objet rond
-      .attr ("x", 10)
-      .attr("y", 10)
-      .attr("width", 10)
-      .attr("height", 10);
-      **/
 
   node.append("text")
       .attr("dy", ".31em")
-      
       .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "start"; })
-      /**
-      .attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
-      **/
       .attr("transform", function(d) { return d.x == 0 ? "translate(10)" : "rotate("+ (-d.x + 90) +")translate(10)"; }) //permet la rotation du texte independemment de la rotation de l'objet
     
       

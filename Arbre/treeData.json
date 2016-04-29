@@ -9,7 +9,7 @@
 			 "parent" : "C++BIO",
 			 "children" : [
 
-			    {"nane" : "UEs Obligatoires",
+			    {"name" : "UEs Obligatoires",
 			     "parent" : "Semestre 7",
 			     "children" : [
 				{"name" : "Anglais", 
@@ -42,7 +42,7 @@
 			 "parent" : "C++BIO", 
 			 "children" : [
 
-			    {"nane" : "UEs Obligatoires",
+			    {"name" : "UEs Obligatoires",
 			     "parent" : "Semestre 8",
 			     "children" : [
 				  {"name" : "Allemand", 
@@ -81,7 +81,7 @@
 			 "parent" : "C++BIO",
 			 "children" : [
 
-			    {"nane" : "UEs Obligatoires",
+			    {"name" : "UEs Obligatoires",
 			     "parent" : "Semestre 7",
 			     "children" : [
 				{"name" : "Anglais", 
@@ -114,7 +114,7 @@
 			 "parent" : "C++BIO", 
 			 "children" : [
 
-			    {"nane" : "UEs Obligatoires",
+			    {"name" : "UEs Obligatoires",
 			     "parent" : "Semestre 8",
 			     "children" : [
 				  {"name" : "patate", 
