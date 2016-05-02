@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title> Carte Essai </title>
+<title> Carte Ronde </title>
 <style>
 /**
 .node circle {
@@ -77,7 +77,7 @@ var svg = d3.select("body").append("svg") //creation des svg dans le body
 
 
 //********** RECUPERATION DES DONNEES *************
-d3.json("treeData.json", function(error, root) { //appel des données
+d3.json("/net/cremi/saupetit/espaces/travail/Projet_cartes_heuristiques/MMM/data/treeData.json", function(error, root) { //appel des données
   if (error) throw error;
 
 
