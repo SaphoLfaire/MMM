@@ -1,0 +1,27 @@
+body {
+background-color:#66CCCC;
+
+}
+
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #B44010;
+  stroke: #B44010;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+   font-weight: bold;
+
+}
+
+.link {
+  fill: #B44010;
+  stroke: #B44010;
+  stroke-width: 1.5px;
+}
