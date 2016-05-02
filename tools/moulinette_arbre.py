@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
 import sys
+import os
 
 
 
@@ -183,10 +184,11 @@ def rangement (parcours, liste_source, liste_destination):
 
 
 #ouverture du fichier source
-source = open("courses.js", "r")
+source = open("/net/cremi/saupetit/espaces/travail/Projet_cartes_heuristiques/MMM/src/courses.js", "r")
 
 #ouverture du fichier de destination
-destination = open("out.json", "w")
+destination = open("/net/cremi/saupetit/espaces/travail/Projet_cartes_heuristiques/MMM/data/data_arbre.json", "w")
+
 
 try :
 	filtrer (source, destination) #appel de la fonction de traitement
