@@ -1,0 +1,310 @@
+{"name" : "Master", 
+ "children" : [
+
+
+    {"name" : "C++BIO",
+     "children" : [
+         {"name" : "semestre 7", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "Anglais"},
+                    {"name" : "AEB"},
+                    {"name" : "BioMod"},
+                    {"name" : "AlgoProg"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]},
+
+         {"name" : "semestre 8", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "InitR&D"},
+                    {"name" : "MOBioS"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+                    {"name" : "InfoApp"},
+                    {"name" : "POO"}
+					]}]},
+
+         {"name" : "semestre 9", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "ClassData"},
+                    {"name" : "CommPR&D"},
+                    {"name" : "Entreprise"},
+                    {"name" : "ModSysBio"},
+                    {"name" : "Prot3D"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+                    {"name" : "AnglaisM2"},
+                    {"name" : "ArchiGen"},
+                    {"name" : "GenHuman"},
+                    {"name" : "DivCell"},
+                    {"name" : "AlgoBioGraph"},
+                    {"name" : "Visu3D"},
+                    {"name" : "POA"},
+                    {"name" : "AppObj"},
+                    {"name" : "OICI"},
+                    {"name" : "SysAuto"}
+					]}]},
+
+         {"name" : "semestre 10", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "StageM2"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]}
+ 		]},
+
+    {"name" : "GENORG",
+     "children" : [
+         {"name" : "semestre 7", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "Anglais"},
+                    {"name" : "AEB"},
+                    {"name" : "BioMod"},
+                    {"name" : "AlgoProg"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]},
+
+         {"name" : "semestre 8", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "InitR&D"},
+                    {"name" : "MOBioS"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+                    {"name" : "InfoApp"},
+                    {"name" : "POO"}
+					]}]},
+
+         {"name" : "semestre 9", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "ClassData"},
+                    {"name" : "CommPR&D"},
+                    {"name" : "Entreprise"},
+                    {"name" : "ModSysBio"},
+                    {"name" : "Prot3D"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+                    {"name" : "AnglaisM2"},
+                    {"name" : "ArchiGen"},
+                    {"name" : "GenHuman"},
+                    {"name" : "DivCell"},
+                    {"name" : "AlgoBioGraph"},
+                    {"name" : "Visu3D"},
+                    {"name" : "POA"},
+                    {"name" : "AppObj"},
+                    {"name" : "OICI"},
+                    {"name" : "SysAuto"}
+					]}]},
+
+         {"name" : "semestre 10", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "StageM2"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]}
+ 		]},
+
+    {"name" : "ORGECO",
+     "children" : [
+         {"name" : "semestre 7", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "Anglais"},
+                    {"name" : "AEB"},
+                    {"name" : "BioMod"},
+                    {"name" : "AlgoProg"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]},
+
+         {"name" : "semestre 8", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "InitR&D"},
+                    {"name" : "MOBioS"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+                    {"name" : "InfoApp"},
+                    {"name" : "POO"}
+					]}]},
+
+         {"name" : "semestre 9", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "ClassData"},
+                    {"name" : "CommPR&D"},
+                    {"name" : "Entreprise"},
+                    {"name" : "ModSysBio"},
+                    {"name" : "Prot3D"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+                    {"name" : "AnglaisM2"},
+                    {"name" : "ArchiGen"},
+                    {"name" : "GenHuman"},
+                    {"name" : "DivCell"},
+                    {"name" : "AlgoBioGraph"},
+                    {"name" : "Visu3D"},
+                    {"name" : "POA"},
+                    {"name" : "AppObj"},
+                    {"name" : "OICI"},
+                    {"name" : "SysAuto"}
+					]}]},
+
+         {"name" : "semestre 10", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+                    {"name" : "StageM2"}
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]}
+ 		]},
+
+    {"name" : "BSC",
+     "children" : [
+         {"name" : "semestre 7", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]},
+
+         {"name" : "semestre 8", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]},
+
+         {"name" : "semestre 9", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]},
+
+         {"name" : "semestre 10", 
+          "children" : [
+
+              {"name" : "UEs Obligatoires", 
+               "children" : [
+
+
+							]},
+
+              {"name" : "UEs Facultatives", 
+  	           "children" : [
+
+
+					]}]}
+ 		]}
+]}
