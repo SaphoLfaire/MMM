@@ -60,10 +60,10 @@ var diagonal = d3.svg.diagonal.radial() //liens entre chaque noeuds --> diagonal
 
 // ********** Arcs de cercle **********
 var arc = d3.svg.arc() //liens entre chaque noeuds --> arc
-    .innerRadius (function(d){return d.x})
-    .outerRadius(30)
-    .startAngle(function(d, i) {return i *Math.PI/180})
-    .endAngle(function(d, i) {return (i*Math.PI/180) });
+    .innerRadius (79)
+    .outerRadius(100)
+    .startAngle(function(d, i) {return i })
+    .endAngle(function(d, i) {return (i*Math.PI/180)});
 
 
 
@@ -102,7 +102,7 @@ svg.append("path").datum(d3.range(points))
 
   var link = svg.selectAll(".link")
       .data(links)
-    .enter().append("path").datum(d3.range(points))
+    .enter().append("path")//.datum(d3.range(points))
       .attr("class", "link")
       .attr("d", arc); // --> ne pas oublier de changer le dernier attribut en fonction de ce que l'on veut
 
@@ -136,7 +136,7 @@ function click(d) { // ca non plus !
   d.children = d._children;
   d._children = null;
   }
-  update(d);
+  visu(d);
 }
 
 </script>

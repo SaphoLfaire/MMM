@@ -63,57 +63,90 @@ def filtrer (source, destination) :
 	"""
 
 	#écriture du premier objet du json	
-	destination.write ("[{\"name\" : \"Master\", \n \"children\" : [\n") 
+	destination.write ("{\"name\" : \"Master\", \n \"children\" : [\n") 
 	#parcours chaque liste de la liste de données, cad chaque parcours
+
 	for i in liste_triee :
 		#puis chaque élément de la liste du parcours
 		for j in i :
+			
 			if j != i[0] :
 				#si l'élément correspond, le nom du parcours est inséré
-				destination.write("    {\"name\" : \"")
+				if i[0] == "C++BIO" :
+					destination.write("\n\n    {\"name\" : \"")
+
+				else : 
+					destination.write(",\n\n    {\"name\" : \"")
+
 				destination.write (i[0])
-				destination.write("\",\n     \"parent\" : \"Master\", \n     \"children\" : [\n")
+				#destination.write("\",\n     \"parent\" : \"Master\")
+				destination.write("\",\n     \"children\" : [\n") 
 				#création de la variable qui va définir le numéro du semestre
 				w = 7
 				#pour chaque liste de semestre, ecrire le nom du semestre et l'objet des ues obligatoires
-				for k in (j) :					
-					destination.write("         {\"name\" : \"")
-					destination.write("semestre ")
+				for k in (j) :
+					if w == 7 :
+						destination.write("         {\"name\" : \"semestre ")
+					else :
+						destination.write(",\n\n         {\"name\" : \"semestre ")
+
 					destination.write(str(w))
-					destination.write("\",\n           \"parent\" : \"")
-					destination.write(i[0])
+					#destination.write("\",\n           \"parent\" : \"")
+					#destination.write(i[0])
 					destination.write("\", \n          \"children\" : [\n\n")
-					destination.write ("              {\"name\" : \"UEs Obligatoires\",\n               \"parent\" : \"")
-					destination.write ("semestre ")
-					destination.write (str(w))
-					destination.write("\", \n               \"children\" : [\n\n")
+					destination.write ("              {\"name\" : \"UEs Obligatoires\",")#\n               \"parent\" : \"")
+					#destination.write ("semestre ")
+					#destination.write (str(w))
+					destination.write(" \n               \"children\" : [\n\n")
 					#pour chaque liste des ues, créer les objets
 					for l in k :
 						#k[0] ==> les ues obligatoires, toujours rangés en première position
 						if l == k[0] :
 							#création des objets ues
+							compteur_obligatoire = 0
 							for n in l :
-								destination.write ("                   {\"name\" : \"")
+								if compteur_obligatoire == 0 :
+									destination.write ("                    {\"name\" : \"")
+
+								else : 
+									destination.write (",\n                    {\"name\" : \"")
+								
 								destination.write((str(n)))
-								destination.write("\",\n                   \"parent\" : \"UEs Obligatoires\"			    	\n},\n")
+								#destination.write("\",\n                   \"parent\" : \"UEs Obligatoires\"			    	\n},\n")
+								destination.write ("\"}")
+								compteur_obligatoire = compteur_obligatoire +1
 					#création de l'objet des ues facultatives
-					destination.write ("              {\"name\" : \"UEs Facultatives\",\n             \"parent\" : \"")
-					destination.write("semestre ")
-					destination.write(str(w))
-					destination.write("\", \n             \"children\" : [\n\n")
+					destination.write("\n							]},\n\n")
+					destination.write ("              {\"name\" : \"UEs Facultatives\"") #,\n             \"parent\" : \"")
+					#destination.write("semestre ")
+					#destination.write(str(w))
+					destination.write(", \n  	           \"children\" : [\n\n")
 					#pour chaque liste des ues, créer les objets
 					for l in k :
 						#k[1] ==> les ues facultatives, rangés en seconde position
 						if l == k[1] :
 							#création des objets ues
+							compteur_facultatif = 0
 							for n in l :
-								destination.write ("                    {\"name\" : \"")
+								if compteur_facultatif == 0 :
+									destination.write ("                    {\"name\" : \"")
+								
+								else : 
+									destination.write (",\n                    {\"name\" : \"")
+									
 								destination.write((str(n)))
-								destination.write("\",\n                    \"parent\" : \"UEs Facultatives\" 			    	\n},\n")
+								#destination.write("\",\n                    \"parent\" : \"UEs Facultatives\" 			    	\n},\n")
+								destination.write("\"}")
+								compteur_facultatif = compteur_facultatif +1
+					destination.write("\n					]}]}")
 					#incrémentation de la variable qui numérote les semestres
 					w = w +1
+
+				destination.write("\n 		]}")
+	
+				
 	#fermeture de tous les objets
-	destination.write(" }\n      ]\n      }\n      ] \n      }\n      ]\n      },\n")
+	destination.write("\n]}\n")
 
 def rangement (parcours, liste_source, liste_destination):
 	liste_p =[]
