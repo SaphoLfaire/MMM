@@ -1,96 +1,545 @@
-{
-    "type": "FeatureCollection",
-    "features": [
-	{
-	    "type": "Feature",
-	    "geometry": {
-		"type": "Point",
-		"coordinates": [
-		    "-0.1198244",
-		    "51.5112139"
-		]
-	    },
-	    "properties": {
-		"name": "London",
-		"lieu": "University of London",
-		"year": "2015",
-		"Pays": "United Kingdom",
-		"id": "1"
-	    }
-	},
-
-	{
-	    "type": "Feature",
-	    "geometry": {
-		"type": "Point",
-		"coordinates": [
-		    "-0.5805000",
-		    " 44.8404400"
-
-		]
-	    },
-	    "properties": {
-		"name": "Bordeaux",
-		"lieu": "University of Bordeaux",
-		"year": "2015",
-		"Pays": "France",
-		"id": "2"
-	    }
-	},
-
-	{
-	    "type": "Feature",
-	    "geometry": {
-		"type": "Point",
-		"coordinates": [
-		    "-2.9349852000000283",
-		    "43.2630126"
-		]
-	    },
-	    "properties": {
-		"name": "Bilbao",
-		"lieu": "University of Bilbao",
-		"year": "2015",
-		"Pays": "Spain",
-		"id": "3"
-	    }
-	},
-	
-	
-	{
-	    "type": "Feature",
-	    "geometry": {
-		"type": "Point",
-		"coordinates": [
-		    "-2.2426305000000184",
-		    "53.4807593"
-		]
-	    },
-	    "properties": {
-		"name": "Manchester",
-		"lieu": "University of Manchester",
-		"year": "2016",
-		"Pays": "United Kingdom",
-		"id": "4"
-	    }
-	},
-
-		{
-	    "type": "Feature",
-	    "geometry": {
-		"type": "Point",
-		"coordinates": [
-		    "-1.2577263000000585",
-		    "51.7520209"
-		]
-	    },
-	    "properties": {
-		"name": "Oxford",
-		"lieu": "University of Oxford",
-		"year": "2015",
-		"Pays": "United Kingdom",
-		"id": "5"
-	    }
-	}
-    ]
+{"type": "FeatureCollection",
+ "features": [
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [175.614064,-40.3850866]},
+      "properties": {"city":"Palmerston North",
+                     "country":"New Zealand",
+                     "year":"2016",
+                     "center":"Massey University",
+                     "id":"1",
+		     "region":"None"
+		     
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.605621,44.825849]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2016",
+                     "center":"ISPED",
+                     "id":"2",
+		     "region":"Aquitaine"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [175.614064,-40.3850866]},
+      "properties": {"city":"Palmerston North",
+                     "country":"New Zealand",
+                     "year":"2016",
+                     "center":"Massey University",
+                     "id":"3",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-71.929733,45.378653]},
+      "properties": {"city":"Sherbrooke",
+                     "country":"Canada",
+                     "year":"2016",
+                     "center":"Universite de Sherbrooke",
+                     "id":"4",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.612645,44.826028]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2016",
+                     "center":"IMS",
+                     "id":"5",
+		     "region":"Aquitaine"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [3.866384,43.644996]},
+      "properties": {"city":"Montpellier",
+                     "country":"France",
+                     "year":"2016",
+                     "center":"IRD",
+                     "id":"6",
+		     "region":"Midi-Pyrénées"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.774042,44.736079]},
+      "properties": {"city":"Montpellier",
+                     "country":"France",
+                     "year":"2016",
+                     "center":"INRA",
+                     "id":"7",
+		     "region":"Languedoc-Roussillon"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [2.134078,48.701844]},
+      "properties": {"city":"Gif sur yvette",
+                     "country":"France",
+                     "year":"2016",
+                     "center":"INRA",
+                     "id":"8",
+		     "region":"Île-de-France"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [8.710757,49.38406]},
+      "properties": {"city":"Heidleberg",
+                     "country":"Germany",
+                     "year":"2016",
+                     "center":"EMBL",
+                     "id":"9",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [8.710757,49.38406]},
+      "properties": {"city":"Heidelberg",
+                     "country":"Germany",
+                     "year":"2016",
+                     "center":"EMBL",
+                     "id":"10",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.578247,44.825025]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2016",
+                     "center":"Bergonie",
+                     "id":"11",
+		     "region":"Aquitaine"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [2.449495,48.617727]},
+      "properties": {"city":"Evry",
+                     "country":"France",
+                     "year":"2016",
+                     "center":"ISSB",
+                     "id":"12",
+		     "region":"Île-de-France"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.578247,44.825025]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2016",
+                     "center":"Bergonie",
+                     "id":"13",
+		     "region":"Aquitaine"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [2.2116,48.5201]},
+      "properties": {"city":"Paris",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"CNAM",
+                     "id":"14",
+		     "region":"Île-de-France"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [2.068363,49.459874]},
+      "properties": {"city":"Beauvais",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"Institut polytechnique LaSalle Beauvais",
+                     "id":"15",
+		     "region":"Picardie"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [2.0856,48.4329]},
+      "properties": {"city":"Gif sur yvette",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"CEA Saclay",
+                     "id":"16",
+		     "region":"Île-de-France"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.774042,44.736079]},
+      "properties": {"city":"Pierotton",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"INRA",
+                     "id":"17",
+		     "retion":"Aquitaine"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [4.867394,45.781262]},
+      "properties": {"city":"Lyon",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"LBBE",
+                     "id":"18",
+		     "region":"Rhône-Alpes"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [6.145116,46.199444]},
+      "properties": {"city":"Geneve",
+                     "country":"Switzerland",
+                     "year":"2015",
+                     "center":"University of Geneva and SIB CALIPHO Group",
+                     "id":"19",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.605621,44.825849]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"ISPED",
+                     "id":"20",
+		     "region":"Aquitaine"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [175.614064,-40.3850866]},
+      "properties": {"city":"Palmerston North",
+                     "country":"New Zealand",
+                     "year":"2015",
+                     "center":"Massey University",
+                     "id":"21",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [8.710757,49.38406]},
+      "properties": {"city":"Heidelberg",
+                     "country":"Germany",
+                     "year":"2015",
+                     "center":"EMBL",
+                     "id":"22",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [8.710757,49.38406]},
+      "properties": {"city":"Heidelberg",
+                     "country":"Germany",
+                     "year":"2015",
+                     "center":"EMBL",
+                     "id":"23",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.601795,44.826517]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"INSERM Neuro Magendie",
+                     "id":"24",
+		     "region":"Aquitaine"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [1.498806,43.527733]},
+      "properties": {"city":"Toulouse",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"INRA",
+                     "id":"25",
+		     "region":"Midi-Pyrénées"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [2.428569,48.612964]},
+      "properties": {"city":"Evry",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"IBISC",
+                     "id":"26",
+		     "region":"Île-de-France"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [8.3253,47.2235]},
+      "properties": {"city":"Zurich",
+                     "country":"Switzerland",
+                     "year":"2015",
+                     "center":"CBRG ETH",
+                     "id":"27",
+		     "region":"None"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.554643,47.486357 ]},
+      "properties": {"city":"Angers",
+                     "country":"France",
+                     "year":"2015",
+                     "center":"IRHSINRA",
+                     "id":"28",
+		     "region":"Pays de la Loire"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.032168 ,51.436803]},
+      "properties": {"city":"Londres",
+                     "country":"United Kingdom",
+                     "year":"2014",
+                     "center":"Desktop Genetics",
+                     "id":"29",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [0.3548,44.483]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2014",
+                     "center":"LaBRI MaBIOVIS",
+                     "id":"30",
+		     "region":"Aquitaine"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [8.710757,49.38406]},
+      "properties": {"city":"Heidelberg",
+                     "country":"Germany",
+                     "year":"2014",
+                     "center":"EMBL",
+                     "id":"31",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [0.3548,44.483]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2014",
+                     "center":"LaBRI MabioVis ",
+                     "id":"32",
+		     "region":"Aquitaine"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [5.6909725000000435,50.8513682]},
+             "properties": {"city":"Maastricht",
+                            "country":"Netherlands",
+                            "year":"2014",
+                            "center":"BIGCAT Universite Maastricht",
+                            "id":"33",
+			    "region":"None"
+			   }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [0.3548,44.483]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2014",
+                     "center":"LaBRI",
+		     "id":"34",
+		     "region":"Aquitaine"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [6.3356,46.3113]},
+      "properties": {"city":"Lausanne",
+                     "country":"Switzerland",
+                     "year":"2014",
+                     "center":"EPFL",
+                     "id":"35",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [1.498806,43.527733]},
+      "properties": {"city":"Toulouse",
+                     "country":"France",
+                     "year":"2014",
+                     "center":"INRA",
+                     "id":"36",
+		     "region":"Midi-Pyrénées"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-73.615266 ,45.500021 ]},
+      "properties": {"city":"Montreal",
+                     "country":"Canada",
+                     "year":"2014",
+                     "center":"IRIC",
+                     "id":"37",
+		     "region":"None"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [151.221499 ,-33.879195 ]},
+      "properties": {"city":"Sydney",
+                     "country":"Australia",
+                     "year":"2014",
+                     "center":"Garvan Institute",
+                     "id":"38",
+		     "region":"None"
+                    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [8.710757,49.38406]},
+      "properties": {"city":"Heidelberg",
+                     "country":"Germany",
+                     "year":"2014",
+                     "center":"EMBL",
+                     "id":"39",
+		     "region":"None"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [1.289348 ,43.676142 ]},
+      "properties": {"city":"Toulouse",
+                     "country":"France",
+                     "year":"2013",
+                     "center":"Biogemma",
+                     "id":"40",
+		     "region":"Midi-Pyrénées"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [3.860362 ,43.631956 ]},
+      "properties": {"city":"Montpellier",
+                     "country":"France",
+                     "year":"2013",
+                     "center":"MMDN",
+                     "id":"41",
+		     "region":"Languedoc-Roussillon"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [3.865331 ,43.637694 ]},
+      "properties": {"city":"Montpellier",
+                     "country":"France",
+                     "year":"2013",
+                     "center":"CRBM",
+                     "id":"42",
+		     "region":"Languedoc-Roussillon"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [1.498806 ,43.527733 ]},
+      "properties": {"city":"Toulouse",
+                     "country":"France",
+                     "year":"2013",
+                     "center":"LIPM INRA",
+                     "id":"43",
+		     "region":"Midi-Pyrénées"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [1.476767 ,43.563556 ]},
+      "properties": {"city":"Toulouse",
+                     "country":"France",
+                     "year":"2013",
+                     "center":"LaasCNRS",
+                     "id":"44",
+		     "region":"Midi-Pyrénées"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-0.601795,44.826517]},
+      "properties": {"city":"Bordeaux",
+                     "country":"France",
+                     "year":"2013",
+                     "center":"Institut Magendie",
+                     "id":"45",
+		     "region":"Aquitaine"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [3.84043 ,43.636976 ]},
+      "properties": {"city":"Montpellier",
+                     "country":"France",
+                     "year":"2013",
+                     "center":"LIRMM",
+                     "id":"46",
+		     "region":"Languedoc-Roussillon"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [1.494368 ,43.528028 ]},
+      "properties": {"city":"Toulouse",
+                     "country":"France",
+                     "year":"2013",
+                     "center":"GenotoolINRA",
+                     "id":"47",
+		     "region":"Midi-Pyrénées"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [8.710757,49.38406]},
+      "properties": {"city":"Heidelberg",
+                     "country":"Germany",
+                     "year":"2013",
+                     "center":"EMBL",
+                     "id":"48",
+		     "region":"None"
+		    }
+     },
+     {"type": "Feature",
+      "geometry": {"type": "Point",
+                   "coordinates": [-73.577816 ,45.573933 ]},
+      "properties": {"city":"Montreal",
+                     "country":"Canada",
+                     "year":"2013",
+                     "center":"Montreal Hearth Institut",
+                     "id":"49",
+		     "region":"None"
+		    }
+             }
+     ]
 }
+
