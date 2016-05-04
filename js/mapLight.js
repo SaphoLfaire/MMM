@@ -403,8 +403,8 @@ function ClickPays(d) {
     
     svg.append("rect")
 	.attr("class", "button_back")
-	.attr("width", 25)
-	.attr("height", 25)
+	.attr("width", 50)
+	.attr("height", 50)
 	.attr("x", 200)
 	.attr("y", 200)
 	.on("click", BackToMap);
