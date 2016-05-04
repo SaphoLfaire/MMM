@@ -77,7 +77,7 @@ var color = d3.scale.ordinal() //Fonction qui permet d'associer une couleur à u
     .domain(["0", "1", "2 à 5", "5 à 10", "10++"])
     .range(["AliceBlue", "GoldenRod", "DarkGoldenRod", "IndianRed", "DarkRed"]);
 
-var taille_rect= 50; //Taille des rectangles
+var taille_rect= 15; //Taille des rectangles
 var legendSpacing = 4; //Espace entre les rectangles
 
 
@@ -403,8 +403,8 @@ function ClickPays(d) {
     
     svg.append("rect")
 	.attr("class", "button_back")
-	.attr("width", 50)
-	.attr("height", 50)
+	.attr("width", 25)
+	.attr("height", 25)
 	.attr("x", 200)
 	.attr("y", 200)
 	.on("click", BackToMap);
