@@ -32,8 +32,8 @@ var projection = d3.geo.mercator()
 
 //Création de l'image au format SVG
 var svg = d3.select("body").append("svg")
-    .attr("width", width / 2)
-    .attr("height", height /2)
+    .attr("width", width )
+    .attr("height", height )
     .attr("viewBox", "0 0 " + width + " " + height);
     
 
