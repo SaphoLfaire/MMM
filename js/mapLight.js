@@ -32,10 +32,10 @@ var projection = d3.geo.mercator()
 
 //Création de l'image au format SVG
 var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .attr("viewBox", "0 0 " + width + " " + height)
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    .attr("width", width / 2)
+    .attr("height", height /2)
+    .attr("viewBox", "0 0 " + width + " " + height);
+    
 
 
 //On ajoute à notre image un rectangle qui sera notre fond bleu
