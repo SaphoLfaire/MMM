@@ -279,8 +279,8 @@ function makeMyMap(error, countries, internship) {
 	    
 	    
 	    queue()
-		.defer(d3.json, "world.json")
-		.defer(d3.json, "internship.json")
+		.defer(d3.json, "data/world.json")
+		.defer(d3.json, "data/internship.json")
 		.await(makeMyMap);
 
 	}
