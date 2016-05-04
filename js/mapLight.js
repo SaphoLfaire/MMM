@@ -77,7 +77,7 @@ var color = d3.scale.ordinal() //Fonction qui permet d'associer une couleur à u
     .domain(["0", "1", "2 à 5", "5 à 10", "10++"])
     .range(["AliceBlue", "GoldenRod", "DarkGoldenRod", "IndianRed", "DarkRed"]);
 
-var taille_rect= 50; //Taille des rectangles
+var taille_rect= 15; //Taille des rectangles
 var legendSpacing = 4; //Espace entre les rectangles
 
 
