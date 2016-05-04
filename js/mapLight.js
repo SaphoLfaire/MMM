@@ -162,7 +162,6 @@ function makeMyMap(error, countries, internship) {
 	    
 	    //Ca c'est ce qui s'affiche dans la fenêtre au passage de la souris
 	    div.html(d.properties.name  + "<br/>" + "internships: " + compteur )
-	    	.duration(1000)
 		.style("left", (d3.event.pageX) + "px")
 		.style("top", (d3.event.pageY - 50) + "px");
 	})
