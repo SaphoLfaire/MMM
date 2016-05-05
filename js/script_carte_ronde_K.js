@@ -36,7 +36,7 @@ var svg = d3.select("body").append("svg")
   .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
 // load the external data
-d3.json("/net/cremi/saupetit/espaces/travail/Projet_cartes_heuristiques/MMM/data/treeData.json", function(error, dataFile) {
+d3.json("data/treeData.json", function(error, dataFile) {
   root = dataFile;
 	root.x0 = height / 2;
 	root.y0 = 0;
