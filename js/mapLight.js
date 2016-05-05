@@ -114,8 +114,8 @@ legend.append("text") // On ajoute du texte pour chaque élément
 
 //Fonction qui permet de charger les données dans l'ordre où on place nos fichiers GeoJson.
 queue()
-    .defer(d3.json, "world.json")
-    .defer(d3.json, "internship.json")
+    .defer(d3.json, "data/world.json")
+    .defer(d3.json, "data/internship.json")
     .await(makeMyMap);
 
 
@@ -247,8 +247,8 @@ function ClickPays(d) {
 	    g.selectAll(".cities").remove();
 	    
 	    queue()
-		.defer(d3.json, "world.json")
-		.defer(d3.json, "internship.json")
+		.defer(d3.json, "data/world.json")
+		.defer(d3.json, "data/internship.json")
 		.await(makeMyMap);
 	    
 	}
@@ -442,9 +442,9 @@ function ClickPays(d) {
     g.selectAll(".countries").remove();
     
     queue()
-	.defer(d3.json, "regions.json")
-	.defer(d3.json, "internship.json")
-	.defer(d3.json, "cities.json")
+	.defer(d3.json, "data/regions.json")
+	.defer(d3.json, "data/internship.json")
+	.defer(d3.json, "data/cities.json")
 	.await(makeMyFrance);
     
    
