@@ -56,7 +56,7 @@ function update(source) {
     d.y = d.depth * 80;
   });
 
-  // Update the nodesâ€¦
+  // Update the nodes.
   var node = svg.selectAll("g.node")
     .data(nodes, function(d) {
       console.log(d)
@@ -118,7 +118,7 @@ function update(source) {
   nodeExit.select("text")
     .style("fill-opacity", 1e-6);
 
-  // Update the linksâ€¦
+  // Update the links.
   var link = svg.selectAll("path.link")
     .data(links, function(d) {
       return d.target.id;
