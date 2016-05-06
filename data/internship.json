@@ -256,7 +256,7 @@
      },
      {"type": "Feature",
       "geometry": {"type": "Point",
-                   "coordinates": [-0.601795,44.826517]},
+                   "coordinates": [-0.608586,44.824767]},
       "properties": {"city":"Bordeaux",
                      "country":"France",
                      "year":"2015",
