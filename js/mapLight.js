@@ -521,7 +521,7 @@ function change() {
     var button_id = this.id;
     console.log("tu viens de cliquer sur le bouton de "+ button_id);
     if (document.getElementById(button_id).style.fill !== "#ff0000"){
-	document.getElementById(button_id).style.fill = "#ff0000";
+	document.getElementById(button_id).style.fill = "Red";
 	g.selectAll(".internshipFr")
 	    .filter(function(d){return d.properties.year == button_id;})
 	    .transition()
@@ -538,7 +538,7 @@ function change() {
 	
     }
     if (document.getElementById(button_id).style.fill !== "#008000"){
-	document.getElementById(button_id).style.fill = "#008000";
+	document.getElementById(button_id).style.fill = "Green";
 	g.selectAll(".internshipFr")
 	    .filter(function(d){return d.properties.year == button_id;})
 	    .transition()
