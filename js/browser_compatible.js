@@ -1,66 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
-
-  //.countries {
-  fill: BurlyWood;
-  stroke: black;
-  stroke-width:0.1px;
-  }
-
-  .countries {
-  stroke: black;
-  stroke-width:0.1px;
-  }
-
-  .countries:hover{
-  fill: GoldenRod;
-  }
-  
-  .internship:hover{
-  fill: DarkGreen;
-  }
-
-  .internship {
-  fill: BlueViolet;
-  opacity:0.5;
-  }
-
-  
-  div.tooltip {   
-  position: absolute;           
-  text-align: center;           
-  width: 90px;                  
-  height: 80px;                 
-  padding: 2px;             
-  font: 12px sans-serif;        
-  background: lightsteelblue;   
-  border: 0px;      
-  border-radius: 8px;           
-  pointer-events: none;         
-  }
-
-
-  .background {
-  fill: CornFlowerBlue;
-  pointer-events: all;
-  }
-  
-  .button {
-	  fill: Green;
-	  stroke: black;
-	  stroke-width:0.5px;
-  }
-  
- 
-  
-</style>
-<body>
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="http://d3js.org/topojson.v0.min.js"></script>
-  <script src="http://d3js.org/queue.v1.min.js"></script>
-
-  <script>
 //On commence par déclarer toutes nos variables
 
 //On ajoute un div au body. Le div du html va ainsi pouvoir contenir notre tooltip
@@ -140,8 +77,8 @@ var color = d3.scale.ordinal() //Fonction qui permet d'associer une couleur à u
     .domain(["0", "1", "2 à 5", "5 à 10", "10++"])
     .range(["AliceBlue", "GoldenRod", "DarkGoldenRod", "IndianRed", "DarkRed"]);
 
-var taille_rect= 15; //Taille des rectangles
-var legendSpacing = 4; //Espace entre les rectangles
+var taille_rect= 40; //Taille des rectangles
+var legendSpacing = 5; //Espace entre les rectangles
 
 
 var legend =svg.selectAll(".legend")//On sélectionne tous les éléments qu'on va créer
@@ -153,7 +90,7 @@ var legend =svg.selectAll(".legend")//On sélectionne tous les éléments qu'on 
 	
 	var hauteur = taille_rect;
 	var x = hauteur;
-	var y = i * 30;
+	var y = i * 50;
 	return "translate(" + x + "," + y + ")";
     });
 
@@ -177,8 +114,8 @@ legend.append("text") // On ajoute du texte pour chaque élément
 
 //Fonction qui permet de charger les données dans l'ordre où on place nos fichiers GeoJson.
 queue()
-    .defer(d3.json, "world.json")
-    .defer(d3.json, "internship.json")
+    .defer(d3.json, "data/world.json")
+    .defer(d3.json, "data/internship.json")
     .await(makeMyMap);
 
 
@@ -227,6 +164,14 @@ function makeMyMap(error, countries, internship) {
 	    div.html(d.properties.name  + "<br/>" + "internships: " + compteur )
 		.style("left", (d3.event.pageX) + "px")
 		.style("top", (d3.event.pageY - 50) + "px");
+
+	    if (d.properties.name == "France") {
+		div.html(d.properties.name  + "<br/>" + "internships: " + compteur + "<br/>" + "Click for details" )
+		.style("left", (d3.event.pageX) + "px")
+		    .style("top", (d3.event.pageY - 50) + "px");
+	    }
+
+		
 	})
     
     
@@ -306,8 +251,8 @@ function ClickPays(d) {
 	g.selectAll(".cities").remove();
 	
 	queue()
-	    .defer(d3.json, "world.json")
-	    .defer(d3.json, "internship.json")
+	    .defer(d3.json, "data/world.json")
+	    .defer(d3.json, "data/internship.json")
 	    .await(makeMyMap);
 	
     }
@@ -370,7 +315,7 @@ function ClickPays(d) {
     function makeMyFrance(error, regions, internship, cities) {
 	
 	
-		console.log("mes regions " + cities);
+	
 	g.selectAll(".regions")
 	    .data(regions.features)
 	    .enter()
@@ -402,7 +347,7 @@ function ClickPays(d) {
 		
 		
 		//Ca c'est ce qui s'affiche dans la fenêtre au passage de la souris
-		div.html(d.properties.nom  + "<br/>" + "compteur " + compteur_regions )
+		div.html(d.properties.nom  + "<br/>" + "internships " + compteur_regions )
 		    .style("left", (d3.event.pageX) + "px")
 		    .style("top", (d3.event.pageY - 50) + "px");
 	    })
@@ -485,25 +430,25 @@ function ClickPays(d) {
 	
 	svg.append("rect")
 	    .attr("class", "button_back")
-	    .attr("width", 25)
-	    .attr("height", 25)
+	    .attr("width", 40)
+	    .attr("height", 40)
 	    .attr("x", 200)
 	    .attr("y", 200)
 	    .on("click", BackToMap);
 	
 	svg.append("text")
 	    .attr("class", "text_button_back")
-	    .attr("x", 230)
-	    .attr("y", 215)
+	    .attr("x", 250)
+	    .attr("y", 220)
 	    .text("retour à la map");
 	
 	g.selectAll(".internship").remove();
 	g.selectAll(".countries").remove();
 	
 	queue()
-	    .defer(d3.json, "regions.json")
-	    .defer(d3.json, "internship.json")
-	    .defer(d3.json, "cities.json")
+	    .defer(d3.json, "data/regions.json")
+	    .defer(d3.json, "data/internship.json")
+	    .defer(d3.json, "data/cities.json")
 	    .await(makeMyFrance);
 	
 	
@@ -549,9 +494,8 @@ var box = svg.selectAll(".rect")
     .append("g")
     .attr("class", "button")
     .attr("transform", function(d, i) { 
-	var hauteur = 1200 ;
-	var x = hauteur;
-	var y = i * 30;
+	var x = 1300;
+	var y = i * 50;
 	return "translate(" + x + "," + y + ")";
  });;
 
@@ -619,4 +563,3 @@ function change() {
 	return null; 
     }
 }
-</script>
