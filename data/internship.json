@@ -146,7 +146,7 @@
      },
      {"type": "Feature",
       "geometry": {"type": "Point",
-                   "coordinates": [2.2116,48.5201]},
+                   "coordinates": [2.354444,48.866944]},
       "properties": {"city":"Paris",
                      "country":"France",
                      "year":"2015",
