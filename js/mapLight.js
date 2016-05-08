@@ -302,7 +302,7 @@ function ClickPays(d) {
 	
     }
     
-    // La fonction makeMyFrance permet de construire uen carte de France avec les régions, les stages en France et les principales villes francaises.
+    // La fonction makeMyFrance permet de construire une carte de France avec les régions, les stages en France et les principales villes francaises.
     
     function makeMyFrance(error, regions, internship, cities) {
 	
