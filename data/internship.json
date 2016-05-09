@@ -288,7 +288,7 @@
              },
              {"type": "Feature",
              "geometry": {"type": "Point",
-                             "coordinates": [8,3253,47.2235]},
+                             "coordinates": [8.548056,47.376388]},
              "properties": {"city":"Zurich",
                              "country":"Switzerland",
                              "year":"2015",
