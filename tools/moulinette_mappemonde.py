@@ -1,9 +1,9 @@
 # coding: utf-8
 from __future__ import unicode_literals
 import re
+import sys
 
-
-the_geojson=open("internship_auto.json", "w")
+the_geojson=open("internship.json", "w")
 the_geojson.write("{\"type\": \"FeatureCollection\",\n")
 the_geojson.write("\"features\": [\n")
 
@@ -21,6 +21,7 @@ for line in the_csv.readlines():
         country = re.search("( ?-?(\w+( ?-?\.?\[?\(?\,?\ ?\w+ ?)\)?\]?)*;){8}", line, re.UNICODE).group(1).replace(";", "")
         year = re.search("20\d{2}", line, re.UNICODE).group(0)
         center = re.search("( ?-?(\w+( ?-?\.?\[?\(?\,?\ ?\w+ ?)\)?\]?)*;){5}", line, re.UNICODE).group(1).replace(";", "")
+        region = re.search("( ?-?(\w+( ?-?\.?\[?\(?\,?\ ?\w+ ?)\)?\]?)*;){6}", line, re.UNICODE).group(1).replace(";", "")
         the_geojson.write("             {\"type\": \"Feature\",\n")
         the_geojson.write("             \"geometry\": {\"type\": \"Point\",\n")
         the_geojson.write("                             \"coordinates\": ["+longitude+","+latitude+"]},\n")
@@ -30,8 +31,10 @@ for line in the_csv.readlines():
         the_geojson.write("                             \"year\":\""+year+"\",\n")
         output_for_center = "                             \"center\":\""+center+"\",\n"
         the_geojson.write(output_for_center.encode('utf-8'))
-        the_geojson.write("                             \"id\":\""+str(cpt)+"\"\n")
+        the_geojson.write("                             \"id\":\""+str(cpt)+"\",\n")
         cpt+=1
+        output_for_region = "                             \"region\":\""+region+"\"\n"
+        the_geojson.write(output_for_region.encode('utf-8'))
         the_geojson.write("                             }\n")
         if (last):
             the_geojson.write("             }\n") #an extra comma and the geojson is not regonized by d3js
@@ -46,4 +49,6 @@ the_geojson.write("}\n")
 
 the_csv.close()
 the_geojson.close()
-
+print "Fin de l'écriture du csv en geojson."
+print "Au revoir."
+sys.exit()
