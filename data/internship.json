@@ -288,7 +288,7 @@
              },
              {"type": "Feature",
              "geometry": {"type": "Point",
-                             "coordinates": [8.548056,47.376388]},
+                             "coordinates": [8,3253,47.2235]},
              "properties": {"city":"Zurich",
                              "country":"Switzerland",
                              "year":"2015",
@@ -305,7 +305,7 @@
                              "year":"2015",
                              "center":"IRHS(INRA)",
                              "id":"28",
-                             "region":"Pays de la Loire"
+                             "region":"Aquitaine, Limousin et Poitou-Charentes"
                              }
              },
              {"type": "Feature",
