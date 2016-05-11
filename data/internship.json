@@ -354,7 +354,7 @@
              },
              {"type": "Feature",
              "geometry": {"type": "Point",
-                             "coordinates": [5.4112,50.5050]},
+                             "coordinates": [5.68624,50.847195]},
              "properties": {"city":"Maastricht",
                              "country":"Netherlands",
                              "year":"2014",
