@@ -146,7 +146,6 @@ function makeMyMap(error, countries, internship) {
 	    var creation_compteurs = d3.nest()
 		.key(function(d) { return d.properties.country; })
 		.key(function(d) { return d.properties.id; })
-		.rollup(function(leaves) { return leaves.length; })
 		.entries(internship.features);
 	    
 
@@ -206,7 +205,6 @@ function makeMyMap(error, countries, internship) {
 	var creation_compteurs = d3.nest()
 	    .key(function(d) { return d.properties.country; })
 	    .key(function(d) { return d.properties.id; })
-	    .rollup(function(leaves) { return leaves.length; })
 	    .entries(internship.features);
 	
     
@@ -327,7 +325,6 @@ function ClickPays(d) {
 		var creation_compteurs_regions = d3.nest()
 		    .key(function(d) { return d.properties.region; })
 		    .key(function(d) { return d.properties.id; })
-		    .rollup(function(leaves) { return leaves.length; })
 		    .entries(internship.features);
 		
 
@@ -362,7 +359,6 @@ function ClickPays(d) {
 	    var creation_compteurs_regions = d3.nest()
 		.key(function(d) { return d.properties.region; })
 		.key(function(d) { return d.properties.id; })
-		.rollup(function(leaves) { return leaves.length; })
 		.entries(internship.features);
 	    
 	    var color_region = "AliceBlue";
